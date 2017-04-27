@@ -37,7 +37,9 @@ app.use(function(req, res, next){
 });
 
    
-mongoose.connect("mongodb://localhost/yelp_camp");
+//mongoose.connect("mongodb://localhost/yelp_camp");
+mongoose.connect("mongodb://eplatt:brodie123@ds123351.mlab.com:23351/angent");
+//mongodb://eplatt:brodie123@ds123351.mlab.com:23351/angent
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
