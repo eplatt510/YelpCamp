@@ -39,7 +39,6 @@ app.use(function(req, res, next){
 console.log("DatabaseURL: " + process.env.DATABASEURL);
    
 mongoose.connect(process.env.DATABASEURL);
-//mongoose.connect("mongodb://eplatt:brodie123@ds123351.mlab.com:23351/angent");
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
